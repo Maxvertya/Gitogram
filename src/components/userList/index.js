@@ -1,1 +1,1 @@
-export {default as userLlist} from './userList.vue'
+export { default as UserList } from './userList.vue'

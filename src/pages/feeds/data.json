@@ -6,32 +6,32 @@
     },
     {
         "id": "1",
-        "avatar": "https://picsum.photos/200",
+        "avatar": "https://picsum.photos/300",
         "name": "Anya"
     },
     {
         "id": "2",
-        "avatar": "https://picsum.photos/200",
+        "avatar": "https://picsum.photos/400",
         "name": "Max"
     },
     {
         "id": "3",
-        "avatar": "https://picsum.photos/200",
+        "avatar": "https://picsum.photos/100",
         "name": "Lena"
     },
     {
         "id": "4",
-        "avatar": "https://picsum.photos/200",
+        "avatar": "https://picsum.photos/500",
         "name": "Ksusha"
     },
     {
         "id": "5",
-        "avatar": "https://picsum.photos/200",
+        "avatar": "https://picsum.photos/700",
         "name": "Andrew"
     },
     {
         "id": "6",
-        "avatar": "https://picsum.photos/200",
+        "avatar": "https://picsum.photos/100",
         "name": "Nick"
     },
     {
@@ -41,12 +41,12 @@
     },
     {
         "id": "8",
-        "avatar": "https://picsum.photos/200",
+        "avatar": "https://picsum.photos/900",
         "name": "Petya"
     },
     {
         "id": "9",
-        "avatar": "https://picsum.photos/200",
+        "avatar": "https://picsum.photos/600",
         "name": "Mike"
     }
 ]

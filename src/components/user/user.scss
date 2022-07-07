@@ -1,0 +1,20 @@
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.avatar{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.img{
+    border-radius: 50%;
+}
+
+.username{
+    margin-left: 14px;
+    font-weight: 700;
+    font-size: 18px;
+}

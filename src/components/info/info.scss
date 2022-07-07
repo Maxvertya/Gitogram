@@ -1,0 +1,30 @@
+.buttons__list{
+    display: inline-flex;
+    border: 1px solid #1B1F231F;
+    border-radius: 10px;
+}
+
+.button__item {
+    border-right: 1px solid #1B1F231F;
+
+    &:last-child {
+        border-right: none;
+    }
+}
+
+.button__overlay {
+    display: flex;
+    align-items: center;
+    padding: 5px ;
+}
+
+.overlay__item {
+    width: 15px;
+    height: 15px;
+}
+
+.overlay__description {
+    margin-left: 5px;
+}
+
+
