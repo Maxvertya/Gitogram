@@ -1,53 +1,26 @@
-.icons__list{
-    width: 24px;
-    height: 24px;
+.header {
+    padding-top: 45px ;
+}
+
+.hero__section {
+    border-bottom: 1px solid #3C3C434A;
+    background-color: #FAFAFA;
+}
+
+.about__section {
+    margin-top: 32px;
+}
+
+.about__list {
     display: flex;
-    flex: 1;
-
-}
-
-.title{
-margin-right: 883px ;
-font-weight: bold;
-font-size: 29px;
-}
-
-.icon__item {
-margin-right: 24px;
-cursor: pointer;
-
-&:last-child{
-    margin-right: 0;
-}
-}
-
-.stories__list{
-    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-.inner__content{
-    border-radius: 10px;
-    border: 1px solid;
-    padding: 24px 20px;
-    margin-top: 16px;
-    border-color: #F1F1F1;
-    -webkit-box-shadow: 34px 0px 67px 100px rgba(241, 241, 241, 0.2);
-    -moz-box-shadow: 34px 0px 67px 100px rgba(241, 241, 241, 0.2);
-    box-shadow: 34px 0px 67px 100px rgba(241, 241, 241, 0.2);
-}
+.about__item {
+    margin-bottom: 24px;
 
-.about__title{
-    font-size: 26px;
-    font-weight: bold;
-}
-
-.person__content__title{
-    font-size: 26px;
-    font-weight: bold;
-}
-
-.person__content__subtitle{
-    font-size: 14px;
-    margin-bottom: 32px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
 }

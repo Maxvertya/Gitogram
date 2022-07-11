@@ -1,54 +1,29 @@
-.c-about{
-    padding: 32px 0px 28px;
-}
-
-
 .c-container{
-    width: 990px;
+    max-width: 990px;
+    width: 100%;
     margin: 0 auto;
 }
 
-
-.person__name-button{
+.person__info {
     display: flex;
     align-items: center;
+    margin-bottom: 16px;
 }
 
-.avatar{
-    width: 44px;
-    height: 44px;
-    position: relative;
-    border-radius: 50%;
-    border: 3px solid transparent;
-
-    
-}
-
-.img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-
-.person__title{
+.person__name {
     margin-left: 14px;
     font-weight: bold;
     font-size: 18px;
 }
 
-.person__info {
-    margin-bottom: 16px;
+.person__content {
+    margin-bottom: 18px;
 }
 
-.person__content {
-    border: 3px solid ;
-    border-color: #F1F1F1;
-    padding: 24px 20px 20px;
-    border-radius: 10px;
-    -webkit-box-shadow: -2px -2px 24px 7px rgba(165, 174, 182, 0.26);
-    -moz-box-shadow: -2px -2px 24px 7px rgba(165, 174, 182, 0.26);
-    box-shadow: -2px -2px 24px 7px rgba(165, 174, 182, 0.26);
+.person__date {
+    font-size: 12px;
+    color: black;
+    opacity: 40%;
 }
 
 .person__toggle {

@@ -1,0 +1,21 @@
+.card__menu {
+    border: 3px solid ;
+    border-color: #F1F1F1;
+    padding: 24px 20px 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: -2px -2px 24px 7px rgba(165, 174, 182, 0.26);
+    -moz-box-shadow: -2px -2px 24px 7px rgba(165, 174, 182, 0.26);
+    box-shadow: -2px -2px 24px 7px rgba(165, 174, 182, 0.26);
+}
+
+.card__menu--title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+}
+
+.card__menu--subtitle {
+    margin-bottom: 32px;
+    font-size: 14px;
+}

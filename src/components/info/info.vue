@@ -1,4 +1,5 @@
 <template>
+<div class="c-info">
   <ul class="buttons__list">
     <li class="button__item">
       <a href="" class="button__overlay" @click.prevent>
@@ -23,6 +24,7 @@
       <a href="" class="button__overlay" @click.prevent>4</a>
     </li>
   </ul>
+  </div>
 </template>
 
 <script>

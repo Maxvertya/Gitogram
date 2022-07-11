@@ -1,38 +1,15 @@
 <template>
 <div class="wrapper__content">
-    <div class="topline">
-    <topline>
-      <template #headline>
-        <div class="title">Gitogram /</div>
-        <div class="icons__list">
-          <icon name="home" class="icon__item"></icon>
-          <icon name="face" class="icon__item"></icon>
-          <icon name="exit" class="icon__item"></icon>
-        </div>
-      </template>
-      <template #content>
-        <ul class="stories__list">
-          <li v-for="story in stories" :key="story.id" class="stories__item">
-            <user-list
-              :avatar="story.avatar"
-              :username="story.name"
-              @onPress="handlePress(story.id)"
-            />
-          </li>
-        </ul>
-      </template>
-    </topline>
+    <header class="header">
+      <header-section></header-section>
+    </header>
+    <div class="hero__section">
+      <hero></hero>
     </div>
-    <div class="about">
+    <div class="about__section">
       <ul class="about__list">
-        <li class="about__item" v-for="item in items" :key="item.id">
-          <about>
-            <template #person__content>
-              <div class="person__content__title">{{item.lang}}</div>
-              <div class="person__content__subtitle">{{item.subtitle}}</div>
-              <info></info>
-            </template>
-          </about>
+        <li class="about__item">
+          <about></about>
         </li>
       </ul>
     </div>
@@ -41,21 +18,16 @@
 
 <script>
 import { About } from '@/components/about/'
-import { Topline } from '@/components/topline'
-import { UserList } from '@/components/userList'
-import { Icon } from '@/icons'
 import stories from './data.json'
-import { Info } from '../../components/info'
+import { headerSection } from '@/components/header'
+import { Hero } from '@/components/hero'
 export default {
   name: 'feeds',
   components: {
-    Topline,
-    Icon,
-    UserList,
+    headerSection,
     About,
-    Info
+    Hero
   },
-
   data () {
     return {
       stories,
