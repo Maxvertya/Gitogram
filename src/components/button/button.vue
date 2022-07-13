@@ -1,27 +1,18 @@
 <template>
-    <button 
-    :class="['c-button', 'theme-green', {'hover-text': withHoverText}]"
-    :data-hover-text = "hoverText"
-    >
-        <span class="button__text">
-            <slot></slot>
-        </span>
-    </button>
+  <button :class="['btn', `${theme}`, `${size}`]">
+    <slot />
+  </button>
 </template>
 
 <script>
 export default {
-    name: 'Button',
-    props: {
-        hoverText: {
-            type: String
-        }
+  props: {
+    theme: {
+      type: String,
+      required: true
     },
-    computed: {
-        withHoverText () {
-            return this.hoverText?.length
-        }
-    }
+    size: String
+  }
 }
 </script>
 
