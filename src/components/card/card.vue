@@ -1,19 +1,34 @@
 <template>
     <div class="c-card">
         <div class="card__menu">
-            <div class="card__menu--title">Javascript</div>
-            <div class="card__menu--subtitle">The best framework</div>
-            <info></info>
+            <div class="card__menu--title">{{name}}</div>
+            <div class="card__menu--subtitle">{{description}}</div>
+            <!-- <info :stars="stars" :forks="forks"></info> -->
+            <slot name="info"></slot>
         </div>
     </div>
 </template>
 
 <script>
-import { Info } from '@/components/info'
 export default {
   name: 'Card',
-  components: {
-    Info
+  props: {
+    name: {
+      type: String
+    },
+    description: {
+      type: String
+    },
+    stars: {
+      type: Number,
+      default: 0,
+      required: true
+    },
+    forks: {
+      type: Number,
+      default: 0,
+      required: true
+    }
   }
 }
 </script>

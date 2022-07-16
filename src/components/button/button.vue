@@ -1,17 +1,45 @@
 <template>
-  <button :class="['btn', `${theme}`, `${size}`]">
-    <slot />
+  <button
+    :class="[
+      'c-button', `${theme}`, `${size}`,
+      {'hover-text': withHoverText}
+    ]"
+    :data-hover-text="hoverText"
+  >
+    <span class="btn-text">
+      <slot></slot>
+    </span>
   </button>
 </template>
 
 <script>
 export default {
+  data () {
+    return {
+      size_s: 'size_s',
+      size_m: 'size_m',
+      theme_grey: 'theme_grey',
+      theme_green: 'theme_green',
+    }
+  },
   props: {
+    size: {
+      type: String,
+      default: 'size_s'
+    },
     theme: {
       type: String,
-      required: true
+      default: 'theme_white'
     },
-    size: String
+    hoverText: {
+      type: String,
+      default: 'default hoverText'
+    }
+  },
+  computed: {
+    withHoverText () {
+      return this.hoverText?.length
+    }
   }
 }
 </script>

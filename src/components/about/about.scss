@@ -4,6 +4,14 @@
     margin: 0 auto;
 }
 
+.person__item {
+    margin-bottom: 24px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
 .person__info {
     display: flex;
     align-items: center;

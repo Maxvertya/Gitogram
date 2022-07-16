@@ -18,25 +18,29 @@
 
 <script>
 import { About } from '@/components/about/'
-import stories from './data.json'
 import { headerSection } from '@/components/header'
 import { Hero } from '@/components/hero'
+import * as api from '../../api'
 export default {
   name: 'feeds',
+  data () {
+    return {
+      items: []
+    }
+  },
+  methods: {},
+  async created () {
+    try {
+      const { data } = await api.trendings.getTrendings()
+      this.items = data.items
+    } catch (erorr) {
+      console.log(erorr)
+    }
+  },
   components: {
     headerSection,
     About,
     Hero
-  },
-  data () {
-    return {
-      stories,
-      items: [
-        { id: 1, lang: 'JavaSript', subtitle: 'JavaScript framework for building interactive web applications ⚡' },
-        { id: 1, lang: 'Vue.js', subtitle: 'The best framework for programming ⚡' },
-        { id: 1, lang: 'React.js', subtitle: 'The best framework for programming ⚡' }
-      ]
-    }
   }
 }
 </script>

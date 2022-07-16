@@ -1,29 +1,23 @@
 <template>
-<div class="c-info">
-  <ul class="buttons__list">
-    <li class="button__item">
-      <a href="" class="button__overlay" @click.prevent>
-        <div class="overlay__item">
-          <icon name="star" class="icon__item"></icon>
-        </div>
-        <div class="overlay__description">Star</div>
-      </a>
-    </li>
-    <li class="button__item">
-      <a href="" class="button__overlay" @click.prevent>156к</a>
-    </li>
-    <li class="button__item">
-      <a href="" class="button__overlay" @click.prevent>
-        <div class="overlay__item">
-          <icon name="fork" class="icon__item"></icon>
-        </div>
-        <div class="overlay__description">Fork</div>
-      </a>
-    </li>
-    <li class="button__item">
-      <a href="" class="button__overlay" @click.prevent>4</a>
-    </li>
-  </ul>
+<div class="stats">
+    <div class="stats__border stats__left">
+      <div class="stats__icon icon mr-4">
+        <icon name="star"></icon>
+      </div>
+      <span>Star</span>
+    </div>
+    <div class="stats__border">
+      {{ stars }}
+    </div>
+    <div class="stats__border">
+      <div class="stats__icon icon mr-4">
+        <icon name="fork"></icon>
+      </div>
+      <span>Fork</span>
+    </div>
+    <div class="stats__border stats__right">
+      {{ forks }}
+    </div>
   </div>
 </template>
 
@@ -33,6 +27,18 @@ export default {
   name: 'info',
   components: {
     Icon
+  },
+  props: {
+    stars: {
+      type: Number,
+      default: 0,
+      required: true
+    },
+    forks: {
+      type: Number,
+      default: 0,
+      required: true
+    }
   }
 }
 </script>
