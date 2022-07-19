@@ -24,7 +24,8 @@ export default {
       default: 'small'
     },
     avatar: {
-      type: String
+      type: String,
+      default: 'https://picsum.photos/300/300'
     }
   }
 }

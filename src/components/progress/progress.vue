@@ -20,14 +20,12 @@ export default {
   },
   methods: {
     emitOnFinish () {
-      if (this.active === true) {
-        this.$emit('onFinish')
-      }
+      this.$emit('onFinish')
     }
   },
   mounted () {
     this.$nextTick(() => {
-      this.props.active = true
+      
     })
     this.$refs.indicator.addEventListener('transitionend', this.emitOnFinish)
   },

@@ -1,4 +1,4 @@
-import xProgress from './'
+import xProgress from './progress.vue'
 
 export default {
   title: 'xProgress',
