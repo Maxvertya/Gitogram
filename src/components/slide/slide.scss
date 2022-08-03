@@ -1,0 +1,69 @@
+.c-slide {
+    width: 375px;
+    height: 667px;
+    transform: scale(.8);
+    transition: .4s;
+    position: relative;
+    margin: 0 auto;
+  
+    &.active {
+      transform: scale(1);
+      z-index: 2;
+    }
+  
+    &__container {
+      border-radius: 8px;
+      background-color: #FFFFFF;
+      overflow: hidden;
+      color: #404040;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+  
+  }
+  
+  .slide {
+  
+    &__content {
+      flex: 1;
+      overflow-y: scroll;
+      border-top: 1px solid #CACACA;
+      border-bottom: 1px solid #CACACA;
+      padding: 6px 0;
+  
+      &::-webkit-scrollbar {
+        width: 19px;  /* width of the entire scrollbar */
+      }
+  
+      &::-webkit-scrollbar-track {
+        background: #FFFFFF;  /* color of the tracking area */
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background-color: #AFAFAF; /* color of the scroll thumb */
+        border-radius: 20px; /* roundness of the scroll thumb */
+        border: 7px solid #FFFFFF; /* creates padding around scroll thumb */
+      }
+    }
+  
+    &__img {
+      width: 294px;
+      height: 204px;
+      overflow: hidden;
+      margin: 0 auto;
+  
+      img {
+        width: 100%;
+      }
+    }
+  
+    &__text {
+      line-height: 22px;
+      color: #404040;
+  
+      p {
+        margin-top: 14px;
+      }
+    }
+  }

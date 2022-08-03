@@ -1,15 +1,16 @@
 .user__wrapper {
-    border-radius: 50%;
-    position: relative;
 
-    &--big {
+    &.big {
         width: 92px;
         height: 92px;
         border: 3px solid transparent;
+        position: relative;
+        border-radius: 50%;
 
         &:hover {
             border: 3px solid;
             border-color: #A6328D;
+            border-radius: 50%;
         }
 
         .user__img {
@@ -22,19 +23,24 @@
         }
     }
 
-    &--middle {
+    &.middle {
         width: 44px;
         height: 44px;
+        border-radius: 50%;
+
+        .user__img {
+            border-radius: 50%;
+        }
     }
 
-    &--small {
+    &.small {
         width: 37px;
-        height: 37px;
+        height: 30px;
+        border-radius: 50%;
+
+        .user__img {
+            border-radius: 50%;
+        }
     }
 
 }
-
-.user__img {
-    border-radius: 50%;
-}
-
