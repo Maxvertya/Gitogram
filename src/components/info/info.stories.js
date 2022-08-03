@@ -1,18 +1,13 @@
 import Info from './info.vue'
-import { Icon } from '@/icons'
 
 export default {
   title: 'Info',
-  component: { Info },
-  subcomponents: {
-    Icon
-  }
+  component: { Info }
 }
 
 const template = (args) => ({
   components: {
-    Info,
-    Icon
+    Info
   },
   data () {
     return {
